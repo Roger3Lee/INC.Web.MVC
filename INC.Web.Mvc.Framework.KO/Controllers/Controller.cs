@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace INC.Web.Mvc.Framework.KO.Controllers
+namespace INC.Web.Mvc.KO.Controllers
 {
     public class BaseController : System.Web.Mvc.Controller
     {

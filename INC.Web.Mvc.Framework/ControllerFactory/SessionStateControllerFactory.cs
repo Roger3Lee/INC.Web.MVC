@@ -9,7 +9,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.SessionState;
 
-namespace INC.Web.Mvc.Framework.ControllerFactory
+namespace INC.Web.Mvc.Infrastructure.ControllerFactory
 {
     public class SessionStateControllerFactory : DefaultControllerFactory
     {

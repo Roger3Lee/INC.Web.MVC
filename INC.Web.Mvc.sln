@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INC.Web.Mvc.Framework", "INC.Web.Mvc.Framework\INC.Web.Mvc.Framework.csproj", "{DA6503F0-AB7F-4D2F-8DFB-24D6452B0066}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INC.Web.Mvc.Infrastructure", "INC.Web.Mvc.Framework\INC.Web.Mvc.Infrastructure.csproj", "{DA6503F0-AB7F-4D2F-8DFB-24D6452B0066}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INC.Web.Mvc.Framework.KO", "INC.Web.Mvc.Framework.KO\INC.Web.Mvc.Framework.KO.csproj", "{B8694C26-6083-4205-880B-E31DDF6F7C6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INC.Web.Mvc.KO", "INC.Web.Mvc.Framework.KO\INC.Web.Mvc.KO.csproj", "{B8694C26-6083-4205-880B-E31DDF6F7C6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INC.Web.Mvc.Framework.Sample", "INC.Web.MVC.Framework.Sample\INC.Web.Mvc.Framework.Sample.csproj", "{051418E0-037A-4E41-8B2A-A5395119FE0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B8694C26-6083-4205-880B-E31DDF6F7C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8694C26-6083-4205-880B-E31DDF6F7C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8694C26-6083-4205-880B-E31DDF6F7C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{051418E0-037A-4E41-8B2A-A5395119FE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051418E0-037A-4E41-8B2A-A5395119FE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{051418E0-037A-4E41-8B2A-A5395119FE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{051418E0-037A-4E41-8B2A-A5395119FE0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

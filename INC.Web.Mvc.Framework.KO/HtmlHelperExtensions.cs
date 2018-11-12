@@ -10,11 +10,14 @@ namespace INC.Web.Mvc.Framework.KO
 {
     public static class HtmlHelperExtensions
     {
+
         private static string GetMemberName<TModel, TProperty>(Expression<Func<TModel, TProperty>> action)
         {
             var expression = (MemberExpression)action.Body;
             return expression.Member.Name;
         }
+
+        #region Text Box
 
         // 摘要: 
         //     通过使用指定的 HTML 帮助器和窗体字段的名称，返回文本 input 元素。
@@ -99,7 +102,7 @@ namespace INC.Web.Mvc.Framework.KO
         //     一个 input 元素，其 type 特性设置为“text”。
         public static MvcHtmlString KOTextBox(this HtmlHelper htmlHelper, string name, object value, object htmlAttributes)
         {
-            IDictionary<string, object> attributes = null;
+            System.Web.Routing.RouteValueDictionary attributes = null;
             if (null != htmlAttributes)
                 attributes = HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
             return KOTextBox(htmlHelper, name, value, string.Empty, attributes);
@@ -383,25 +386,29 @@ namespace INC.Web.Mvc.Framework.KO
             return KOTextBoxFor(htmlHelper, expression, string.Empty, htmlAttributes);
         }
 
-         //摘要: 
-         //    返回一个 HTML label 元素以及由指定表达式表示的属性的属性名称。
-        
-         //参数: 
-         //  html:
-         //    此方法扩展的 HTML 帮助器实例。
-        
-         //  expression:
-         //    一个表达式，用于标识要显示的属性。
-        
-         //类型参数: 
-         //  TModel:
-         //    模型的类型。
-        
-         //  TValue:
-         //    值的类型。
-        
-         //返回结果: 
-         //    一个 HTML label 元素以及由表达式表示的属性的属性名称。
+        #endregion
+
+        #region Label
+
+        //摘要: 
+        //    返回一个 HTML label 元素以及由指定表达式表示的属性的属性名称。
+
+        //参数: 
+        //  html:
+        //    此方法扩展的 HTML 帮助器实例。
+
+        //  expression:
+        //    一个表达式，用于标识要显示的属性。
+
+        //类型参数: 
+        //  TModel:
+        //    模型的类型。
+
+        //  TValue:
+        //    值的类型。
+
+        //返回结果: 
+        //    一个 HTML label 元素以及由表达式表示的属性的属性名称。
         public static MvcHtmlString KOLabelFor<TModel, TValue>(this HtmlHelper<TModel> html, Expression<Func<TModel, TValue>> expression)
         {
             var htmlAttributes = new Dictionary<string, object>();
@@ -409,6 +416,7 @@ namespace INC.Web.Mvc.Framework.KO
             return LabelExtensions.LabelFor(html, expression, htmlAttributes);
         }
 
+        #endregion
 
         #region TextArea
         public static MvcHtmlString KOTextAreaFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, TProperty>> expression, object attribute)
