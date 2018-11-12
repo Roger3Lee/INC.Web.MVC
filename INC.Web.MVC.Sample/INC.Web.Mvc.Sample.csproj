@@ -232,7 +232,7 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\INC.Web.Mvc.Framework.KO\INC.Web.Mvc.KO.csproj">
+    <ProjectReference Include="..\INC.Web.Mvc.KO\INC.Web.Mvc.KO.csproj">
       <Project>{b8694c26-6083-4205-880b-e31ddf6f7c6b}</Project>
       <Name>INC.Web.Mvc.KO</Name>
     </ProjectReference>
