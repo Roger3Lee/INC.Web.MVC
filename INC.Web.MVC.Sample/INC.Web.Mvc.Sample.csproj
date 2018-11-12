@@ -236,7 +236,7 @@
       <Project>{b8694c26-6083-4205-880b-e31ddf6f7c6b}</Project>
       <Name>INC.Web.Mvc.KO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\INC.Web.Mvc.Framework\INC.Web.Mvc.Infrastructure.csproj">
+    <ProjectReference Include="..\INC.Web.Mvc.Infrastructure\INC.Web.Mvc.Infrastructure.csproj">
       <Project>{da6503f0-ab7f-4d2f-8dfb-24d6452b0066}</Project>
       <Name>INC.Web.Mvc.Infrastructure</Name>
     </ProjectReference>
